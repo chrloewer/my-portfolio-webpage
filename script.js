@@ -133,7 +133,7 @@
 
     const subject = `Portfolio inquiry from ${name}`;
     const body = `${message}\n\n— ${name}\n${email}`;
-    const href = `mailto:hello@chris.dev?subject=${encodeURIComponent(
+    const href = `mailto:chr.loewer@googlemai.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
