@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chris — Senior Software Engineer building thoughtful, performant products across Java, Python, and JavaScript." />
+  <meta name="theme-color" content="#0b0d12" />
+  <title>Chris — Senior Software Engineer</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Chris — home">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span class="brand-text">chris<span class="brand-dot">.</span>dev</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button
+          id="theme-toggle"
+          class="icon-btn"
+          type="button"
+          aria-label="Toggle color theme"
+          aria-pressed="false"
+          title="Toggle theme"
+        >
+          <svg class="icon icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="currentColor" />
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2" x2="12" y2="5" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+              <line x1="2" y1="12" x2="5" y2="12" />
+              <line x1="19" y1="12" x2="22" y2="12" />
+              <line x1="4.9" y1="4.9" x2="7" y2="7" />
+              <line x1="17" y1="17" x2="19.1" y2="19.1" />
+              <line x1="4.9" y1="19.1" x2="7" y2="17" />
+              <line x1="17" y1="7" x2="19.1" y2="4.9" />
+            </g>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path
+              d="M20 14.5A8 8 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+
+        <button
+          id="nav-toggle"
+          class="icon-btn nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow glow-a"></div>
+        <div class="hero-glow glow-b"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal" data-reveal>
+          <span class="status-dot" aria-hidden="true"></span>
+          Available for new projects — Q1 2026
+        </p>
+
+        <h1 class="hero-title reveal" data-reveal data-reveal-delay="80">
+          Hi, I'm <span class="accent-gradient">Chris</span>.<br />
+          Senior Software Engineer<br />
+          building <span class="rotating-word" aria-live="polite">software</span> that lasts.
+        </h1>
+
+        <p class="hero-sub reveal" data-reveal data-reveal-delay="160">
+          Senior Software Engineer focused on shipping reliable, maintainable
+          systems — from backend services in Java and Python to the
+          JavaScript glue that ties them together.
+        </p>
+
+        <div class="hero-ctas reveal" data-reveal data-reveal-delay="240">
+          <a class="btn btn-primary" href="#projects">
+            See my work
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <dl class="hero-stats reveal" data-reveal data-reveal-delay="320">
+          <div>
+            <dt>Years building</dt>
+            <dd>20+</dd>
+          </div>
+          <div>
+            <dt>Shipped projects</dt>
+            <dd>40+</dd>
+          </div>
+          <div>
+            <dt>Primary stack</dt>
+            <dd>Java · Python · JS</dd>
+          </div>
+        </dl>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container two-col">
+        <header class="section-head reveal" data-reveal>
+          <p class="kicker">01 — About</p>
+          <h2>Senior Software Engineer who ships what he designs.</h2>
+        </header>
+
+        <div class="prose reveal" data-reveal data-reveal-delay="120">
+          <p>
+            I'm a Senior Software Engineer with 20+ years of experience
+            leading technical work across Java, Python, and JavaScript. I
+            enjoy the full arc — scoping an ambiguous problem, designing a
+            system that holds up under real load, and seeing it through to
+            production.
+          </p>
+          <p>
+            I lean on modern business and AI tooling to move faster without
+            cutting corners, and I care deeply about clean interfaces,
+            maintainable code, and quietly reliable systems. If something
+            feels <em>almost</em> right, I usually can't help but fix it.
+          </p>
+
+          <ul class="chip-list" aria-label="Quick facts">
+            <li>Senior engineer</li>
+            <li>Backend & platform</li>
+            <li>AI-augmented workflow</li>
+            <li>Mentor</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <header class="section-head centered reveal" data-reveal>
+          <p class="kicker">02 — Skills</p>
+          <h2>Tools I reach for</h2>
+          <p class="section-lead">
+            The business tools, AI copilots, and languages I use day-to-day to
+            ship software that holds up.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal" data-reveal>
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M3 7h18M3 12h18M3 17h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </div>
+            <h3>Business Tools</h3>
+            <ul class="tag-list">
+              <li>Jira</li>
+              <li>Confluence</li>
+              <li>Slack</li>
+              <li>GitHub</li>
+              <li>Microsoft 365</li>
+              <li>Figma</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-reveal data-reveal-delay="80">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M12 3l2.3 4.7L19 9l-3.8 3.3L16.3 18 12 15.3 7.7 18l1.1-5.7L5 9l4.7-1.3L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>AI Tools</h3>
+            <ul class="tag-list">
+              <li>Claude Code</li>
+              <li>ChatGPT</li>
+              <li>GitHub Copilot</li>
+              <li>Cursor</li>
+              <li>Anthropic API</li>
+              <li>OpenAI API</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-reveal data-reveal-delay="160">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M8 6l-5 6 5 6M16 6l5 6-5 6M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Languages</h3>
+            <ul class="tag-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <p class="kicker">03 — Selected work</p>
+          <h2>Projects I'm proud of</h2>
+          <p class="section-lead">
+            A small, rotating selection. Each one taught me something I still
+            carry into the next.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-reveal>
+            <div class="project-visual" aria-hidden="true">
+              <div class="pv-shape pv-shape-1"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="badge">Featured</span>
+                <span class="year">2025</span>
+              </div>
+              <h3>Northwind — commerce dashboard</h3>
+              <p>
+                Rebuilt a legacy ops dashboard into a snappy, keyboard-first
+                control plane. Cut p95 load time from 3.8s to 420ms.
+              </p>
+              <ul class="tag-list">
+                <li>Next.js</li>
+                <li>tRPC</li>
+                <li>Postgres</li>
+                <li>Radix</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Case study
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#" class="link-arrow" aria-label="View live site">Live
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M14 4h6v6M20 4L10 14M10 6H5v13h13v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-reveal data-reveal-delay="80">
+            <div class="project-visual" aria-hidden="true">
+              <div class="pv-shape pv-shape-2"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="badge badge-alt">Open source</span>
+                <span class="year">2024</span>
+              </div>
+              <h3>Prism — tiny design-token CLI</h3>
+              <p>
+                A zero-config CLI that turns a JSON token file into typed
+                CSS, Tailwind config, and Figma styles — in a single command.
+              </p>
+              <ul class="tag-list">
+                <li>TypeScript</li>
+                <li>Node</li>
+                <li>Zod</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-arrow">GitHub
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M14 4h6v6M20 4L10 14M10 6H5v13h13v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#" class="link-arrow">Docs
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-reveal data-reveal-delay="160">
+            <div class="project-visual" aria-hidden="true">
+              <div class="pv-shape pv-shape-3"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="badge">Product</span>
+                <span class="year">2024</span>
+              </div>
+              <h3>Harbor — async standups</h3>
+              <p>
+                A quiet, calm place for distributed teams to share progress.
+                Shipped from first commit to 10k active users in six months.
+              </p>
+              <ul class="tag-list">
+                <li>Remix</li>
+                <li>Supabase</li>
+                <li>Stripe</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Case study
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#" class="link-arrow">Live
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M14 4h6v6M20 4L10 14M10 6H5v13h13v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-reveal data-reveal-delay="240">
+            <div class="project-visual" aria-hidden="true">
+              <div class="pv-shape pv-shape-4"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="badge badge-alt">Experiment</span>
+                <span class="year">2023</span>
+              </div>
+              <h3>Field notes — generative covers</h3>
+              <p>
+                A weekend experiment that grew into a Twitter-famous
+                generator for album-cover-style posters, all made with
+                plain Canvas and procedural noise.
+              </p>
+              <ul class="tag-list">
+                <li>Canvas</li>
+                <li>WebGL</li>
+                <li>Noise</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Try it
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M14 4h6v6M20 4L10 14M10 6H5v13h13v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#" class="link-arrow">Write-up
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section-muted" id="experience">
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <p class="kicker">04 — Experience</p>
+          <h2>Where I've built things</h2>
+        </header>
+
+        <ol class="timeline" aria-label="Work history">
+          <li class="timeline-item reveal" data-reveal>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Senior Software Engineer <span class="at">· Lumen Labs</span></h3>
+                <span class="period">2023 — Present</span>
+              </div>
+              <p>
+                Lead engineer on the growth team. Owned the migration from a
+                monolithic Rails app to a Next.js + tRPC frontend without a
+                single feature regression. Mentored four junior engineers.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal" data-reveal data-reveal-delay="80">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Full-Stack Engineer <span class="at">· Northstar</span></h3>
+                <span class="period">2020 — 2023</span>
+              </div>
+              <p>
+                Shipped core features of a B2B scheduling product used by
+                20k+ teams. Built the design system that still powers the app
+                today.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal" data-reveal data-reveal-delay="160">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Frontend Developer <span class="at">· Studio Oak</span></h3>
+                <span class="period">2018 — 2020</span>
+              </div>
+              <p>
+                Agency life — built award-winning marketing sites for a
+                dozen clients, from early-stage startups to global brands.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal" data-reveal data-reveal-delay="240">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Freelance Developer</h3>
+                <span class="period">2003 — 2018</span>
+              </div>
+              <p>
+                Where I cut my teeth and spent the first chapter of a 20+
+                year career. Hand-coded sites, PHP backends, WordPress
+                rescues, a lot of late-night debugging, and an endless
+                curiosity that never left.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <header class="section-head reveal" data-reveal>
+          <p class="kicker">05 — Contact</p>
+          <h2>Let's build something good.</h2>
+          <p class="section-lead">
+            Got a project, a role, or just want to say hi? I read every
+            message and reply within a day or two.
+          </p>
+
+          <ul class="contact-direct">
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 7l9 6 9-6M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l2-2h14l2 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="mailto:hello@chris.dev">hello@chris.dev</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              Berlin, Germany · CET
+            </li>
+          </ul>
+        </header>
+
+        <form
+          class="contact-form reveal"
+          data-reveal
+          data-reveal-delay="120"
+          id="contact-form"
+          novalidate
+        >
+          <div class="form-row">
+            <label for="field-name">Your name</label>
+            <input id="field-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="field-email">Email</label>
+            <input id="field-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <label for="field-message">Message</label>
+            <textarea id="field-message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+              Send message
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path d="M3 12l18-9-6 18-4-8-8-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <p class="form-note" aria-live="polite" id="form-note">
+              Opens your email client — no server, no tracking.
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="Chris — back to top">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-text">chris<span class="brand-dot">.</span>dev</span>
+        </a>
+        <p>Designed & built with care. Feel free to borrow ideas.</p>
+      </div>
+
+      <nav class="social" aria-label="Social links">
+        <a href="https://github.com" aria-label="GitHub" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.09 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.4-1.27.74-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.48.11-3.08 0 0 .98-.31 3.2 1.18a11 11 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.6.23 2.78.11 3.08.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.41.35.77 1.05.77 2.12v3.14c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM10 9h3.8v1.71h.05A4.17 4.17 0 0 1 17.6 8.7c3.98 0 4.7 2.6 4.7 6V21h-4v-5.4c0-1.29-.03-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.86V21h-4z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com" aria-label="X / Twitter" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7.1L4.4 22H1.3l8.1-9.3L1 2h7.1l4.9 6.5L18.9 2zm-2.4 18h1.9L7.6 4H5.6l10.9 16z"/>
+          </svg>
+        </a>
+        <a href="mailto:hello@chris.dev" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l2-2h14l2 2"/>
+          </svg>
+        </a>
+      </nav>
+
+      <p class="copyright">© <span id="year">2026</span> Chris. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
