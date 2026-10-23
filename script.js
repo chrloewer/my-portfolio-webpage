@@ -102,7 +102,7 @@
   /* ---------- Rotating hero word ---------- */
   const rotator = document.querySelector('.rotating-word');
   if (rotator && !reduced) {
-    const words = ['software', 'systems', 'services', 'platforms'];
+    const words = ['AI-powered software', 'LLM systems', 'AI copilots', 'intelligent platforms'];
     let i = 0;
     window.setInterval(() => {
       rotator.classList.add('is-swapping');
