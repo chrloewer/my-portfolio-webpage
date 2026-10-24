@@ -21,6 +21,7 @@ A polished, single-page personal portfolio built as a plain static site. No buil
 ├── script.js        # Theme toggle, nav, scroll reveal, contact mailto
 ├── assets/
 │   └── favicon.svg  # Site icon
+├── CHANGELOG.md
 └── README.md
 ```
 
